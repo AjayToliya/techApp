@@ -12,5 +12,6 @@ Features
 1. Price Filter: Apply filters to display products within a specific price range.
 1. Category Filter: Filter products based on their category.
 1. Prevent Duplicate Items: Ensure that the same product cannot be added to the cart multiple times.
-1. https://github.com/AjayToliya/techApp/assets/149996384/6df946c5-568e-4c4d-b493-9342c3c43f35
+
+https://github.com/AjayToliya/techApp/assets/149996384/6df946c5-568e-4c4d-b493-9342c3c43f35
 
