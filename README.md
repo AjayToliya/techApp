@@ -15,3 +15,12 @@ Features
 
 https://github.com/AjayToliya/techApp/assets/149996384/6df946c5-568e-4c4d-b493-9342c3c43f35
 
+![Screenshot_20240401_160032](https://github.com/AjayToliya/techApp/assets/149996384/cc774794-d3d2-4d47-b4b4-7ef03674b0a4)
+![Screenshot_20240401_160019](https://github.com/AjayToliya/techApp/assets/149996384/1527d6d9-42d2-4cfa-9d3b-3707b718c46b)
+![Screenshot_20240401_155935](https://github.com/AjayToliya/techApp/assets/149996384/a2285556-dd2b-43c4-b203-c61293c73764)
+![Screenshot_20240401_155916](https://github.com/AjayToliya/techApp/assets/149996384/530bd0d6-4a38-4802-b34e-db1a36c84155)
+![Screenshot_20240401_155828](https://github.com/AjayToliya/techApp/assets/149996384/35b702e2-72c2-4652-9c2a-86104e2c9823)
+
+
+
+
