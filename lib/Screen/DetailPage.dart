@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tech_app/utils/product.dart';
 
@@ -47,6 +48,7 @@ class _detailpageState extends State<detailpage> {
         alignment: Alignment.bottomCenter,
         children: [
           Container(
+            color: Color(0xffd8f1f8),
             width: double.infinity,
             height: double.infinity,
             alignment: Alignment.topCenter,
@@ -70,9 +72,9 @@ class _detailpageState extends State<detailpage> {
           ),
           Container(
             width: double.infinity,
-            height: 360,
+            height: 240,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0xffd8f1f8),
               boxShadow: <BoxShadow>[
                 BoxShadow(blurRadius: 7, spreadRadius: 1, color: Colors.grey),
               ],
@@ -89,6 +91,29 @@ class _detailpageState extends State<detailpage> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "${argu['product_name']}",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 25,
+                            ),
+                          ),
+                          Text(
+                            "\$${argu['product_price']}",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 26,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                          "------------------------------------------------------------------------------------------"),
+                      Text(
+                          "------------------------------------------------------------------------------------------"),
                       Column(
                         children: [
                           Row(
@@ -113,52 +138,6 @@ class _detailpageState extends State<detailpage> {
                               )
                             ],
                           ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "${argu['product_name']}",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 25,
-                            ),
-                          ),
-                          Text(
-                            "\$${argu['product_price']}",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 26,
-                                color: Colors.red),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "${argu['category']}",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 18,
-                                color: Colors.grey),
-                          ),
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.star,
-                                color: Colors.amber,
-                              ),
-                              Text(
-                                "${argu['rating']}",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w700,
-                                    fontSize: 18,
-                                    color: Colors.grey),
-                              ),
-                            ],
-                          )
                         ],
                       ),
                     ],

@@ -11,6 +11,9 @@ class homepage extends StatefulWidget {
 
 class _homepageState extends State<homepage> {
   String? dropDrown;
+  double fromval = 0;
+  double toval = 2000;
+  RangeValues values = RangeValues(0, 2000);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,29 +106,47 @@ class _homepageState extends State<homepage> {
                     child: Row(
                       children: [
                         DropdownButton(
+                          hint: const Text(
+                            "Select category...",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          value: dropDrown,
                           onChanged: (val) {
                             setState(() {
                               dropDrown = val as String;
                             });
                           },
-                          hint: Text(
-                            "Select Category...",
-                            style: TextStyle(
-                              fontSize: 18,
-                            ),
-                          ),
-                          value: dropDrown,
-                          items: AllProductData.cartProductData
+                          items: AllProductData.data
                               .map(
-                                (e) => DropdownMenuItem(
-                                  value: e[''],
+                                (val) => DropdownMenuItem(
+                                  value: val['product_category'],
                                   child: Text(
-                                    e['product_category'],
+                                    val['product_category'],
+                                    style: const TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600),
                                   ),
                                 ),
                               )
                               .toList(),
                         ),
+                        (dropDrown != null)
+                            ? ActionChip(
+                                onPressed: () {
+                                  setState(() {
+                                    dropDrown = null;
+                                    values = RangeValues(fromval, toval);
+                                  });
+                                },
+                                avatar: Icon(Icons.close),
+                                label: Text(
+                                  "Close",
+                                ),
+                              )
+                            : Container(),
                       ],
                     ),
                   ),

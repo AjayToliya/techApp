@@ -64,6 +64,8 @@ class _cartpageState extends State<cartpage> {
                                   ],
                                 ),
                                 child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
                                     Column(
                                       children: [
@@ -98,7 +100,7 @@ class _cartpageState extends State<cartpage> {
                                               Text(
                                                 "${e['product_name']}",
                                                 style: TextStyle(
-                                                  fontSize: 14,
+                                                  fontSize: 18,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -123,7 +125,7 @@ class _cartpageState extends State<cartpage> {
                                             child: const Text(
                                               "DELETE",
                                               style: TextStyle(
-                                                fontSize: 18,
+                                                fontSize: 22,
                                                 fontWeight: FontWeight.bold,
                                                 decoration:
                                                     TextDecoration.underline,
